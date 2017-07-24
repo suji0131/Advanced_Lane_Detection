@@ -32,3 +32,7 @@ To determine the Lane curvature and vehicle position below equations are used:
 
 Final processed image looks like below:
 ![Final Image](https://github.com/suji0131/Advanced_Lane_Detection/blob/master/output_images/FinalImg.png)
+
+Here is the link to my [final video](https://github.com/suji0131/Advanced_Lane_Detection/blob/master/project_video_final.mp4)
+
+I wrote most of my work in classes but in hindsight I should have used just functions as processing time required for a 30 seconds video is nearly four minutes, which is impractical as a self driving car has to identify lanes, position of car and take a decision within a few fraction of a second. For future work I will try to speed up my pipeline.
