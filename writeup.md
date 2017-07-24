@@ -20,11 +20,11 @@ Class written in Perspective.py gives the perspective transformation of a given 
 ![PerspectiveTransformation](https://github.com/suji0131/Advanced_Lane_Detection/blob/master/output_images/PerspectiveT.png)
 
 ## Lane Detection and Lane Curvature
-Both of these tasks can be found in Line.py file. A histogram is used to identify the pixels which form part of the lane. Adding the pixel values along each column in the image, the peaks in the histogram are found and these peaks are good indicators of the x-position of the base of the lane lines. 
+Both of these tasks can be found in Line.py file. A histogram is used to identify the pixels which form part of the lane. Adding the pixel values along each column in the image, the peaks in the histogram are found and these peaks are good indicators of the x-position of lane lines. 
 
 ![Histogram](https://github.com/suji0131/Advanced_Lane_Detection/blob/master/output_images/Histogram.png)
 
-These points are used as starting points to search for the lines. From here on, I used a sliding window placed around line centers to form the new windows up till the top of the frame. After that, I scanned each window to collect the non-zero pixels within window bounds. Then a second order polynomial can be fit to the collected points.
+These points are used as starting points to search for the lines. From here on, a sliding window placed around line centers to form the new windows up till the top of the frame. After that, each window is scanned to collect the non-zero pixels within window bounds. A second order polynomial is fit to points.
 ![SlideWindow](https://github.com/suji0131/Advanced_Lane_Detection/blob/master/output_images/SlidingWindow.png)
 
 To determine the Lane curvature and vehicle position below equations are used:
