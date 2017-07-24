@@ -28,9 +28,9 @@ class processingPipeline(object):
     def __init__(self, kernal=3, orient='x'):
         #parameters
         self.sobel_kernel = 3
-        self.absolute_threshold = (20, 100)
-        self.magnitude_threshold = (20, 100)
-        self.direction_threshold = (0.7, 1.3)
+        self.absolute_threshold = (25, 90)
+        self.magnitude_threshold = (25, 90)
+        self.direction_threshold = (0.65, 1.2)
         self.color_threshold = (170, 255)
 
         self.s_channel = 2
